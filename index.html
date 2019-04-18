@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Registration Page</title>
+		</script>
 		<style>
 			body{
 				background-image: linear-gradient(to right,#8A2BE2,#ff5722);
@@ -74,8 +75,7 @@
 				background:red;
 
 			}
-			.register-right .btn-secondary{
-				float: left;
+			.register-left .btn-secondary{
 				border-radius: 1.5rem;
 				border:none;
 				width : 120px;
@@ -85,7 +85,7 @@
 				margin-top: 20px;
 				padding: 10px; 
 			}
-			.register-right .btn-secondary:hover{
+			.register-left .btn-secondary:hover{
 				background:green;
 				color:#fff;
 			}
@@ -109,7 +109,7 @@
 	</head>
 	<body>
 		<center><img src="IEEECSlogo2.png" class="lg" height="80px"></center>
-		<div class="container-fluid">
+		<div class="container">
 		<div class="row">
 		<div class="col-md-10 offset=md-1">
 		<div class="row">
@@ -118,13 +118,15 @@
 		       <h3>Join Us</h3>
 		       <p>IEEE-CS The best student technical chapter of VIT</p>
 		       <a href="http://www.ieeecsvit.com/"><button type="button" class="btn btn-primary">About Us</button></a>
+		       <a href="nrfm22.html"><button type="button" class="btn btn-secondary">Create Account</button></a>
 		  </div>
 		  <div class="col-md-7 register-right">
                <h2>Register Here</h2>
                <form method="get" action="a.jsp">
                <div class="register-form">
                	   <div class="form-group">
-               	   	<input type="text" class="form-control" placeholder="Name" required>
+               	   	<input type="text" class="form-control" placeholder="Name" required="true">
+               	   	<p class="p1"></p>
                	   </div>
                	   <div class="form-group">
                	   	<input type="text" class="form-control" placeholder="Registration No." required>
@@ -136,7 +138,6 @@
                	   	<input type="password" class="form-control" placeholder="Password" required>
                	   </div> 
                	   <input type="submit" name="submit1" value="Login" class="btn btn-primary">
-               	   <input type="submit" name="submit2" value="Create Account" class="btn btn-secondary">
                	   </form>      	
                </div>
 		  </div>
