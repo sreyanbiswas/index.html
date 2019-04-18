@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<title>Registration Page</title>
+		<style>
+			body{
+				background-image: linear-gradient(to right,#8A2BE2,#ff5722);
+				margin-top : 50px !important;
+			}
+			.lg{
+				padding-bottom:20px;
+				padding-top: 0px;
+				transition: all 0.3s ease-in-out 0s;
+			}
+			.register-left{
+				text-align:center;
+				color:#fff;
+				padding: 30px;
+			}
+			.register-left h3{
+				color:orange;
+				font-size: 30px;
+				font-weight: 20px;
+			}
+			.register-left img{
+                margin-top: 60px;
+                margin-bottom: 18px;
+                width:80px;
+                animation: mover 1s infinite alternate;
+			}
+			.register-left p{
+				padding: 20px 20px 0;
+				font-size: 15px;
+				font-weight:10px;
+			}
+			.register-left .btn-primary{
+				border-radius: 1.5rem;
+				border:none;
+				width : 120px;
+				background: #f8f8f8;
+				font-weight:600;
+				color: #555;
+				margin-top: 20px;
+				padding : 10px; 
+			}
+			.register-left .btn-primary:hover{
+				background: #000;
+			}
+			.register-right{
+				border:none;
+				background:#000;
+				border-radius:10%;
+				padding:70px;
+			}
+			.register-right h2{
+				text-align: center;
+				margin-bottom: 10px;
+				color:#ff9800;
+			}
+			.register-form{
+				padding: 30x;
+			}
+			.register-right .btn-primary{
+				float: right;
+				border-radius: 1.5rem;
+				border:none;
+				width : 120px;
+				background: #ff9800;
+				font-weight:600;
+				color: #fff;
+				margin-top: 20px;
+				padding : 10px; 
+			}
+			.register-right .btn-primary:hover{
+				background:red;
+
+			}
+			.register-right .btn-secondary{
+				float: left;
+				border-radius: 1.5rem;
+				border:none;
+				width : 120px;
+				background: #ff9800;
+				font-weight:600;
+				color: #fff;
+				margin-top: 20px;
+				padding: 10px; 
+			}
+			.register-right .btn-secondary:hover{
+				background:green;
+				color:#fff;
+			}
+			@keyframes mover{
+				0%{
+					transform: translateY(0);
+				}
+				100%{
+					transform: translateY(-20px);
+				}
+			}
+			.lg:hover{
+				cursor: default;
+				transform: rotateY(360deg);
+				transition: all 2s ease-in-out 0s;
+			}
+		</style>
+		 <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	</head>
+	<body>
+		<center><img src="IEEECSlogo2.png" class="lg" height="80px"></center>
+		<div class="container">
+		<div class="row">
+		<div class="col-md-10 offset=md-1">
+		<div class="row">
+		  <div class="col-md-5 register-left">
+		  	   <img src="icon2.png">
+		       <h3>Join Us</h3>
+		       <p>IEEE-CS The best student technical chapter of VIT</p>
+		       <a href="http://www.ieeecsvit.com/"><button type="button" class="btn btn-primary">About Us</button></a>
+		  </div>
+		  <div class="col-md-7 register-right">
+               <h2>Register Here</h2>
+               <form method="get" action="a.jsp">
+               <div class="register-form">
+               	   <div class="form-group">
+               	   	<input type="text" class="form-control" placeholder="Name" required>
+               	   </div>
+               	   <div class="form-group">
+               	   	<input type="text" class="form-control" placeholder="Registration No." required>
+               	   </div> 
+               	   <div class="form-group">
+               	   	<input type="email" class="form-control" placeholder="Email" required>
+               	   </div> 
+               	   <div class="form-group">
+               	   	<input type="password" class="form-control" placeholder="Password" required>
+               	   </div> 
+               	   <input type="submit" name="submit1" value="Login" class="btn btn-primary">
+               	   <input type="submit" name="submit2" value="Create Account" class="btn btn-secondary">
+               	   </form>      	
+               </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>            	
+	</body>
+</html>
